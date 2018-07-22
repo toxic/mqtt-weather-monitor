@@ -60,9 +60,18 @@ void loop() {
   MQTT_connect();
 
   // publish values
-  temperature.publish(dht.readTemperature());
-  humidity.publish(dht.readHumidity());
-  light.publish((uint32_t)analogRead(LIGHT_ANALOG_PIN));
+  float temperatureValue = dht.readTemperature();
+  float humidityValue = dht.readHumidity();
+  int lightValue = analogRead(LIGHT_ANALOG_PIN);
+
+  temperature.publish(temperatureValue);
+  humidity.publish(humidityValue);
+  light.publish((uint32_t)lightValue);
+
+  Serial.println("Debug:");
+  Serial.println(String(temperatureValue) + String("°C"));
+  Serial.println(String(humidityValue) + String("%rh"));
+  Serial.println(String(lightValue) + String("L"));
 
   delay(60000); // sleep 1 minute
 }
