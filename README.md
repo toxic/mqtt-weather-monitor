@@ -10,3 +10,4 @@ Monitor temperature, humidity and light
 ## Software
 - MQTT (mosquitto) server
 - Node-RED + Node-RED-dashboard for UI
+- (optional) MQTT.fx desktop client to test MQTT server (publish & subscribe to feeds)
