@@ -23,3 +23,8 @@ Read temperature, humidity and light values and publish to MQTT and display data
 - [MQTT server](https://www.eclipse.org/mosquitto/download/) 
 - [Node-RED](https://nodered.org/) + Node-RED-dashboard for web UI
 - (optional) [MQTT.fx](http://mqttfx.jensd.de/) desktop client to test MQTT server (publish & subscribe to feeds)
+
+## Web UI screenshots
+![Home window](https://github.com/toxic/mqtt-weather-monitor/blob/master/screenshots/Home.png?raw=true)
+
+![History window](https://github.com/toxic/mqtt-weather-monitor/blob/master/screenshots/History.png?raw=true)
