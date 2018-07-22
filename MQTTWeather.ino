@@ -6,7 +6,6 @@
 
 int DHT_DIGITAL_PIN = 7;
 int LIGHT_ANALOG_PIN = A1;
-int MIC_DIGITAL_PIN = 8;
 
 DHT dht(DHT_DIGITAL_PIN, DHT11);
 
@@ -39,8 +38,6 @@ void MQTT_connect();
 void setup() {
 
   Serial.begin(115200);
-
-  pinMode(MIC_DIGITAL_PIN, INPUT);
 
   // Init & connect to WIFI
   Serial.print("WIFI: ");
