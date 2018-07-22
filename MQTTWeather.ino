@@ -64,7 +64,7 @@ void loop() {
   humidity.publish(dht.readHumidity());
   light.publish((uint32_t)analogRead(LIGHT_ANALOG_PIN));
 
-  delay(1000 * 60 * 5); // every 5 minutes
+  delay(60000); // sleep 1 minute
 }
 
 void MQTT_connect() {
