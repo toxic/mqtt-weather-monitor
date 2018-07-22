@@ -1,5 +1,5 @@
 # mqtt-weather-monitor
-Monitor temperature, humidity and light
+Read temperature, humidity and light values and publish to MQTT and display data via web UI.
 
 ## Hardware
 - Arduino UNO
